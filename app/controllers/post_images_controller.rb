@@ -4,7 +4,7 @@ class PostImagesController < ApplicationController
     @post_image = PostImage.new
   end
 
-  def creat
+  def create
     @post_image = PostImage.new(post_image_params)
     @post_image.user_id = current_user.id
     @post_image.save
@@ -12,11 +12,9 @@ class PostImagesController < ApplicationController
   end
 
   def index
-
   end
 
   def show
-
   end
 
   private
